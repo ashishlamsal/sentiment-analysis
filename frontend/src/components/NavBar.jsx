@@ -2,7 +2,12 @@ export default function NavBar({ toggleTheme }) {
   return (
     <nav className="navbar bg-base-200">
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">Sentiment Analysis</a>
+        <a
+          className="btn btn-ghost normal-case text-xl"
+          onClick={() => window.location.reload(false)}
+        >
+          Sentiment Analysis
+        </a>
       </div>
       <div className="flex-none mr-4">
         <label className="btn btn-circle btn-ghost swap swap-rotate mr-2">
