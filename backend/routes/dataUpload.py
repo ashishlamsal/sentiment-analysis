@@ -9,7 +9,7 @@ from pydantic import BaseModel
 class Data(BaseModel):
     data: str
 
-@data_router.post("/upload", response_model=Data)
+@data_router.post("/upload")
 def process_data_upload(data: Data):
     res = get_prediction(data.data)
     return {"data": res}
