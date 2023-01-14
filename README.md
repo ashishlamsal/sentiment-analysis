@@ -50,13 +50,15 @@ Source of the dataset [NepCOV19Tweets dataset](https://www.kaggle.com/datasets/m
 
 ## Model
 
-For this project, we have used a deep-learning approach based on MuRIL architecture. MuRIL(Multilingual Representations for Indian Languages) is a BERT model pre-trained on 17 Indian languages and their transliterated counterparts. This model uses a BERT base architecture pretrained from scratch using the Wikipedia, Common Crawl, PMINDIA  and Dakshina  corpora for 17  Indian languages that includes Nepali as one of the languages. The model is then fine-tuned on the Nepali Covid-19 tweets dataset for sentiment analysis.
+For this project, we have used a deep-learning approach based on MuRIL architecture. [MuRIL(Multilingual Representations for Indian Languages)](https://huggingface.co/google/muril-base-cased) is a BERT model pre-trained on 17 Indian languages and their transliterated counterparts. This model uses a BERT base architecture pretrained from scratch using the Wikipedia, Common Crawl, PMINDIA  and Dakshina  corpora for 17  Indian languages that includes Nepali as one of the languages. The model is then fine-tuned on the Nepali Covid-19 tweets dataset for sentiment analysis.
 
 ## Installation
 
 ### Step 1: Clone the project
 
-```git clone https://github.com/ashishlamsal/sentiment-analysis.git```
+```powershell
+git clone https://github.com/ashishlamsal/sentiment-analysis.git
+```
 
 ### Step 2: Install and Run Backend Application
 
