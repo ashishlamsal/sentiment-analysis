@@ -18,17 +18,19 @@
 <!-- omit in toc -->
 ## Table of Contents
 
-- [1. About The Project](#1-about-the-project)
-- [2. Installation](#2-installation)
-  - [2.1. Clone the project](#21-clone-the-project)
-  - [2.2. Install and Run Backend Application](#22-install-and-run-backend-application)
-  - [2.3. Install and Run Frontend Application](#23-install-and-run-frontend-application)
-  - [2.4. Open the application in browser](#24-open-the-application-in-browser)
-- [3. License](#3-license)
-- [4. Contact](#4-contact)
-- [5. Acknowledgments](#5-acknowledgments)
+- [About The Project](#about-the-project)
+- [Dataset](#dataset)
+- [Model](#model)
+- [Installation](#installation)
+  - [Step 1: Clone the project](#step-1-clone-the-project)
+  - [Step 2: Install and Run Backend Application](#step-2-install-and-run-backend-application)
+  - [Step 3: Install and Run Frontend Application](#step-3-install-and-run-frontend-application)
+  - [Step 4: Open the application in browser](#step-4-open-the-application-in-browser)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgments](#acknowledgments)
 
-## 1. About The Project
+## About The Project
 
 [![Project Name Screen Shot][project-screenshot]](https://example.com)
 
@@ -38,13 +40,25 @@ Although there are some more works carried out in non-Nepali language, very few 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 2. Installation
+## Dataset
 
-### 2.1. Clone the project
+Source of the dataset [NepCOV19Tweets dataset](https://www.kaggle.com/datasets/mathew11111/nepcov19tweets) with 32,824 total tweets
+
+- positive class: 14, 823 samples
+- neutral class: 4,591 samples
+- negative class: 13,410 samples
+
+## Model
+
+For this project, we have used a deep-learning approach based on MuRIL architecture. MuRIL(Multilingual Representations for Indian Languages) is a BERT model pre-trained on 17 Indian languages and their transliterated counterparts. This model uses a BERT base architecture pretrained from scratch using the Wikipedia, Common Crawl, PMINDIA  and Dakshina  corpora for 17  Indian languages that includes Nepali as one of the languages. The model is then fine-tuned on the Nepali Covid-19 tweets dataset for sentiment analysis.
+
+## Installation
+
+### Step 1: Clone the project
 
 ```git clone https://github.com/ashishlamsal/sentiment-analysis.git```
 
-### 2.2. Install and Run Backend Application
+### Step 2: Install and Run Backend Application
 
 ```powershell
 cd .\backend
@@ -54,7 +68,9 @@ pip install -r requirements.txt
 python main.py
 ```
 
-### 2.3. Install and Run Frontend Application
+> Note: You need to put the fine-tuned MURIL model in `\backend\ml\sentiment-model\3\`.
+
+### Step 3: Install and Run Frontend Application
 
 ```powershell
 cd .\frontend
@@ -62,24 +78,21 @@ yarn install
 yarn run dev
 ```
 
-### 2.4. Open the application in browser
+### Step 4: Open the application in browser
 
 ```http://127.0.0.1:5173/```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- LICENSE -->
-## 3. License
+## License
 
 Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- CONTACT -->
-## 4. Contact
+## Contact
 
 | <a href = "https://github.com/ashishlamsal"><img src = "https://avatars1.githubusercontent.com/u/59776422?s=400&v=4" width="144" style="border-radius:50%"></a> | <a href = "https://github.com/JanakSharma2055"><img src = "https://avatars.githubusercontent.com/u/60380225?v=4" width="144" style="border-radius:50%"></a> |
 | :-: | :-: |
@@ -87,10 +100,8 @@ Distributed under the MIT License. See [LICENSE](./LICENSE) for more information
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- ACKNOWLEDGMENTS -->
-## 5. Acknowledgments
+## Acknowledgments
 
 - [NepCOV19Tweets Dataset](https://www.hindawi.com/journals/cin/2021/2158184/)
 
