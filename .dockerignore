@@ -1,0 +1,15 @@
+*/__pycache__/
+*/*.egg-info/
+*/*.dist-info/
+*/*.log
+*/*.tar.gz
+*/*.whl
+*/build/
+*/dist/
+*/venv/
+*/.pytest_cache/
+*/.mypy_cache/
+*/.ipynb_checkpoints/
+*/.DS_Store
+*/.python-version
+
