@@ -156,3 +156,4 @@ dist-ssr
 sentiment_model/
 Pipfile
 yarn.lock
+flagged/
