@@ -26,13 +26,14 @@
   - [Step 2: Install and Run Backend Application](#step-2-install-and-run-backend-application)
   - [Step 3: Install and Run Frontend Application](#step-3-install-and-run-frontend-application)
   - [Step 4: Open the application in browser](#step-4-open-the-application-in-browser)
+- [Evaluation](#evaluation)
 - [License](#license)
 - [Contact](#contact)
 - [Acknowledgments](#acknowledgments)
 
 ## About The Project
 
-[![Project Name Screen Shot][project-screenshot]](https://example.com)
+[![Project Name Screen Shot][project-screenshot]](https://sentiment-analysis-ashishlamsal.vercel.app)
 
 Sentiment analysis is the use of natural language processing, text analysis, computational linguistics, and biometrics to systematically identify, extract, quantify, and study affective states and subjective information. Sentiment analysis is widely applied to voice of the customer materials such as reviews and survey responses, online and social media, and healthcare materials for applications that range from marketing to customer service to clinical medicine. With the rise of deep language models, such as RoBERTa, also more difficult data domains can be analyzed, e.g., news texts where authors typically express their opinion/sentiment less explicitly.
 
@@ -110,6 +111,14 @@ HUGGINGFACE_TOKEN=<your-huggingface-token>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Evaluation
+
+![Classification Report][classification-report-3]
+&nbsp;
+![Metrics][metrics-3]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- LICENSE -->
 ## License
 
@@ -158,3 +167,5 @@ Distributed under the MIT License. See [LICENSE](./LICENSE) for more information
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 [project-screenshot]: ./assets/project-screenshot.png
+[classification-report-3]: ./assets/classification-report-3.png
+[metrics-3]: ./assets/metrics-3.png
