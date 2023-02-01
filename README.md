@@ -10,7 +10,7 @@
   <p align="center">
     In this project, we used MURIL (Multilingual Unsupervised Representations for Indian Languages), a multilingual BERT model, to perform sentiment analysis on Nepali text.
     <br />
-    <a href="https://github.com/ashishlamsal/sentiment-analysis"><strong>View Demo »</strong></a>
+    <a href="https://sentiment-analysis-ashishlamsal.vercel.app"><strong>View Demo »</strong></a>
     <br />
   </p>
 </div>
@@ -85,7 +85,7 @@ Create `.env` file inside `frontend` directory and add the following environment
 VITE_APP_BASE_URL=http://localhost:8000/run/predict
 ```
 
-Alternatively, if you are running the gradio backend application, you can use the following environment variable:
+Alternatively, if you are running the `gradio` backend application, you can use the following environment variable:
 
 ```plaintext
 VITE_APP_BASE_URL=http://127.0.0.1:7860/run/predict
@@ -101,13 +101,14 @@ yarn run dev
 
 ```http://127.0.0.1:5173/```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 > Note that the `gradio` app inside `backend/gradio` uses a private model from huggingface. In order to use private model from huggingface, you need to create a `.env` file inside `backend/gradio` directory and add the following environment variables:
 
 ```plaintext
 HUGGINGFACE_TOKEN=<your-huggingface-token>
 ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 ## License

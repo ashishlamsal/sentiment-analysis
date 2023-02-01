@@ -47,7 +47,9 @@ export default function App() {
     <div className="h-screen w-screen">
       <NavBar toggleTheme={toggleTheme} />
       <main className="container max-w-2xl mx-auto text-center pt-6">
-        <h1 className="text-4xl font-bold mt-4 py-4">Sentiment Analysis</h1>
+        <h1 className="text-4xl font-bold mt-4 py-4">
+          Sentiment Analysis for Nepali Text
+        </h1>
         {/* add subheading decription */}
         <p className="text-gray-500 mb-4 pb-6 text-center">
           In this project, we used MURIL (Multilingual Unsupervised
@@ -61,7 +63,7 @@ export default function App() {
           <div className="input-group justify-center">
             <input
               type="text"
-              placeholder="Type here…"
+              placeholder="Type here in Nepali…"
               className="input input-bordered input-lg w-full max-w-lg"
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
