@@ -35,7 +35,7 @@ def get_sentiment(text):
     with torch.no_grad():
         logits = model(**tokens)[0]
         normalized_pred = torch.softmax(logits, dim=1).cpu().numpy()
-        print(normalized_pred[0])
+
     each_class_score = normalized_pred[0]  # normalized pred was 2d array
     top_prediction = normalized_pred.argmax().item()
     top_prediction_score = each_class_score[top_prediction]

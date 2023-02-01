@@ -77,6 +77,17 @@ python main.py
 ```powershell
 cd .\frontend
 yarn install
+```
+
+Create `.env` file inside `frontend` directory and add the following environment variables:
+
+```plaintext
+VITE_APP_BASE_URL=http://localhost:8000/run/predict
+```
+
+Finally, run the frontend application:
+
+```powershell
 yarn run dev
 ```
 
@@ -85,6 +96,12 @@ yarn run dev
 ```http://127.0.0.1:5173/```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+> Note that the `gradio` app inside `backend/gradio` uses a private model from huggingface. In order to use private model from huggingface, you need to create a `.env` file inside `backend/gradio` directory and add the following environment variables:
+
+```plaintext
+HUGGINGFACE_TOKEN=<your-huggingface-token>
+```
 
 <!-- LICENSE -->
 ## License

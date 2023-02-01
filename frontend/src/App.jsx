@@ -16,7 +16,7 @@ export default function App() {
   const handleClick = async () => {
     setIsLoading(true);
     try {
-      const response = await axios.post("http://localhost:8000/data/upload", {
+      const response = await axios.post(import.meta.env.VITE_APP_BASE_URL, {
         data: inputValue,
       });
 
