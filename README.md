@@ -85,6 +85,12 @@ Create `.env` file inside `frontend` directory and add the following environment
 VITE_APP_BASE_URL=http://localhost:8000/run/predict
 ```
 
+Alternatively, if you are running the gradio backend application, you can use the following environment variable:
+
+```plaintext
+VITE_APP_BASE_URL=http://127.0.0.1:7860/run/predict
+```
+
 Finally, run the frontend application:
 
 ```powershell

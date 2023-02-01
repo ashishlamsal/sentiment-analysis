@@ -67,3 +67,20 @@ iface = gr.Interface(
 )
 
 iface.launch()
+
+# {
+#     "data": [
+#         {
+#             "predicted_label": "negative",
+#             "predicted_score": 0.9930140376091003,
+#             "each_class_pred": {
+#                 "negative": 0.9930140376091003,
+#                 "neutral": 0.002179638249799609,
+#                 "positive": 0.0048062680289149284,
+#             },
+#         }
+#     ],
+#     "is_generating": false,
+#     "duration": 2.1564486026763916,
+#     "average_duration": 2.2250293493270874,
+# }

@@ -17,18 +17,21 @@ export default function App() {
     setIsLoading(true);
     try {
       const response = await axios.post(import.meta.env.VITE_APP_BASE_URL, {
-        data: inputValue,
+        data: [inputValue],
+        // add headers
+        headers: {
+          "Content-Type": "application/json",
+        },
       });
 
       // get result in json format
       const result = await response.data;
 
       // set sentiment
-      const predicted_label = result["data"]["predicted_label"];
+      const predicted_label = result["data"][0]["predicted_label"];
 
-      console.log(result["data"]);
       setSentiment(predicted_label);
-      setResult(result["data"]["each_class_pred"]);
+      setResult(result["data"][0]["each_class_pred"]);
     } catch (err) {
       console.error(err);
     } finally {
